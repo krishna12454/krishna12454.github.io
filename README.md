@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Krishna Sri Chaitanya Kesani | Portfolio</title>
+  <style>
+    /* Reset some default browser styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #222;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover, a:focus {
+      color: #004999;
+      outline: none;
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto 3rem auto;
+      padding: 0 1.5rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    header img.profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin-bottom: 1rem;
+      border: 3px solid #0066cc;
+    }
+    header h1 {
+      margin: 0.3rem 0 0.1rem;
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: #222;
+    }
+    header p.subtitle {
+      margin: 0.2rem 0;
+      font-weight: 500;
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    section:last-child {
+      border-bottom: none;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #003366;
+      border-left: 5px solid #0066cc;
+      padding-left: 0.75rem;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      color: #333;
+    }
+    ul.contact-list {
+      list-style: none;
+      padding: 0;
+      font-size: 1rem;
+      color: #444;
+    }
+    ul.contact-list li {
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+    }
+    .project-card {
+      background: #fafafa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover, .project-card:focus-within {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      outline: none;
+    }
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #004080;
+    }
+    .project-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    .project-card a {
+      font-weight: 600;
+      color: #0066cc;
+      font-size: 0.95rem;
+    }
+    .project-card a:hover {
+      color: #004999;
+      text-decoration: underline;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <img src="profile.jpg" alt="Krishna Sri Chaitanya Kesani" class="profile-pic" />
+      <h1>Krishna Sri Chaitanya Kesani</h1>
+      <p class="subtitle">Master’s Student, Computer Science @ University of Basel</p>
+      <p class="subtitle">UI/UX Designer | HCI Enthusiast | Aviation Privacy Researcher</p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I’m Krishna Sri Chaitanya Kesani, a Master’s student in Computer Science at the University of Basel with a strong passion for UI/UX Design, Human-Computer Interaction (HCI), and the aviation sector.</p>
+      <p>I combine my technical skills with creativity to design intuitive, user-friendly digital experiences. Recently, I completed a project focused on privacy risks in aviation systems, addressing critical security challenges and proposing innovative solutions.</p>
+      <p>Alongside this, I have worked on the "Argument Seesaw" project, which further developed my skills in designing interactive, engaging interfaces grounded in user-centered principles.</p>
+      <p>My goal is to create seamless, accessible, and visually appealing applications that improve user satisfaction while ensuring privacy and security.</p>
+      <p>Feel free to reach out to me!</p>
+      <ul class="contact-list" aria-label="Contact information">
+        <li>📞 +41 78 338 35 33</li>
+        <li>📧 <a href="mailto:k.kesani@stud.unibas.ch">k.kesani@stud.unibas.ch</a></li>
+        <li>📍 Basel, Switzerland</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project-card" tabindex="0">
+          <h3>Privacy Risks in Aviation Systems</h3>
+          <p>A research project analyzing privacy vulnerabilities in aviation communication systems and proposing mitigation strategies.</p>
+          <a href="https://github.com/krishna12454/aviation-privacy" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+        <article class="project-card" tabindex="0">
+          <h3>Argument Seesaw</h3>
+          <p>An interactive interface project focused on enhancing user engagement and decision-making through balanced argument visualization.</p>
+          <a href="https://github.com/krishna12454/education-argument-seesaw" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+        <article class="project-card" tabindex="0">
+          <h3>Loan Approval Prediction</h3>
+          <p>A privacy-aware machine learning model predicting loan approvals using differential privacy techniques.</p>
+          <a href="https://github.com/M1K1B/privacy-project" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+      </div>
+    </section>
+    <section id="experience">
+  <h2>Experience</h2>
+  <div class="projects">
+    <article class="project-card" tabindex="0">
+      <h3>IT & UX Design Intern</h3>
+      <p><strong>HCL Technologies, Chennai, India (2023–2024)</strong><br>
+      Conducted usability testing and wireframing with Figma and Adobe XD. Built backend systems using Python (Flask/Django), MySQL, and RESTful APIs. Supported multilingual outreach and content development.</p>
+    </article>
+    <article class="project-card" tabindex="0">
+      <h3>Freelance UX Designer & Developer</h3>
+      <p><strong>Ridge Soft Solutions, India (2022–2023)</strong><br>
+      Designed portals for nonprofits using React.js and Firebase. Led user-centered design cycles from requirements to prototypes. Focused on storytelling-based UX to boost engagement.</p>
+    </article>
+    <article class="project-card" tabindex="0">
+      <h3>Student Research Assistant – Data Analyst</h3>
+      <p><strong>KL University, India (2021–2022)</strong><br>
+      Developed Python tools for data collection and analysis. Used BeautifulSoup, Pandas, spaCy, Power BI, and Matplotlib. Emphasized ethical data scraping aligned with privacy policies.</p>
+    </article>
+  </div>
+</section>
+
+
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list" aria-label="Contact information">
+        <li>📞 +41 78 338 35 33</li>
+        <li>📧 <a href="mailto:k.kesani@stud.unibas.ch">k.kesani@stud.unibas.ch</a></li>
+        <li>📍 Basel, Switzerland</li>
+      </ul>
+    </section>
+
+  </div>
+
+</body>
+</html>
